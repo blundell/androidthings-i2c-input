@@ -6,4 +6,4 @@
 
 I2C input example
 
-Accompanying blog post: https://github.com/blundell/androidthings-i2c-input
+Accompanying blog post: http://blog.blundellapps.co.uk/tut-android-things-temperature-sensor-i2c-on-the-rainbow-hat/
