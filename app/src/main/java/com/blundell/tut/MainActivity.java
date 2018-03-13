@@ -7,7 +7,7 @@ import android.os.Looper;
 import android.util.Log;
 
 import com.google.android.things.pio.I2cDevice;
-import com.google.android.things.pio.PeripheralManagerService;
+import com.google.android.things.pio.PeripheralManager;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        PeripheralManagerService service = new PeripheralManagerService();
+        PeripheralManager service = PeripheralManager.getInstance();
         try {
             bus = service.openI2cDevice(I2C_ADDRESS, BMP280_TEMPERATURE_SENSOR_SLAVE);
         } catch (IOException e) {
